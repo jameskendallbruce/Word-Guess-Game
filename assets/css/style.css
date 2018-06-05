@@ -1,0 +1,125 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    color: #777;
+    background: url("../images/aqua-purple-dots.jpeg");
+  }
+
+#navtop {
+    /* position: fixed; */
+    z-index: 99;
+    width: 100%;
+    overflow: auto;
+    color: red;
+    background:rgba(255, 255, 255, 0.65);
+    border-bottom: 3px solid #ccc;
+    position: static;
+    width: 100%;
+    align-content: center;
+    clear: both;
+    /* text-align: center; */
+    padding: 0;
+}
+
+#logo {
+    float: left;
+    width: 30%;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 15px;
+}
+
+#name {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    vertical-align: middle;
+    line-height: 1.5;
+    height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    bottom: 0;
+}
+
+#youwin {
+    display: none;
+    max-width: 500px;
+}
+
+.instruction {
+    width: 100%;
+    max-width: 960px;
+    padding: 10px;
+    background: #fff;
+    opacity: 0.75;
+    border: 2px solid #ddd;
+    font-size: 16px;
+    align-content: center;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.instruction p {
+    display: inline-block;
+    line-height: 18px;
+    color: rgb(63, 60, 60);
+  }
+  
+ .instruction p:first-child {
+    border-left: 0 none;
+  }
+
+
+.container {
+    width: 100%;
+    /* max-width: 960px; */
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    border: 3px solid #ddd;
+    text-align: center;
+  }
+
+  #letter-blanks {
+    font-size: 45px;
+    text-align: center;
+    margin: auto 0;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    align-content: center;
+    }
+
+    #bottom {
+     align-content: center;   
+    }
+
+  .guess-box .game-box {
+      width: 50%;
+      height: 50%;
+  }
+
+  #hangman {
+      max-width: 400px;
+  }
+
+  .guess-box {
+      float: left;
+  }
+
+  .game-box {
+      float: left;
+  }
+
+  #start {
+      margin: auto 0;
+  }
+  

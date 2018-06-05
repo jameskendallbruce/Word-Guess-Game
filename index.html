@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+
+    <!-- Borrowing some Bootstrap for grid layout -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Links to reset and style css files-->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- some jQuery for if I'm really struggling -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+    <!-- Link to my javascript -->
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+    
+    <!--This is just a header bar with a page name.  -->
+    <header id="navtop">
+            
+        <div class="cont">
+                    
+            <img id="logo" src="assets/images/marvel-logo-2.png" alt="Marvel Logo">
+
+            <h1 id="name">HANGMAN</h1>
+
+            <button id="start">START</button>
+
+            <button id="reset">RESET</button>
+
+        </div>
+
+    </header>
+
+    <br>
+
+
+    <!-- This is the top half of the game. It's a visual representation of the guesses and how much of the "hangman" has been hung. -->
+    <div class="container container-fluid">
+
+        <div class="row" id="top">
+
+            <!-- minicontainer (left-side) for the guesses. -->
+            <div class="col-sm Guess-box">
+
+                <h2>Guesses: </h2>
+            
+                <div id="bad-guesses"></div>
+
+            </div>
+
+            <img id="youwin" src="assets/images/YouWin.jpg">
+
+            <!-- minicontainer (right-side) for the guesses. -->
+            <div class="col-sm Game-box">
+
+                <img id="hangman" src="assets/images/0.jpg">
+        
+            </div>
+
+        </div>
+        
+        <div class="row text-center" id="bottom">
+            <!-- Bottom half of the game. Visual representation for correct guesses/empty blanks and a win loss tally. -->
+            <div id="answer-box">
+
+                <!-- blanks with correct guesses filled in -->
+                <div class="text-center" id="letter-blanks"></div>
+
+                <!-- score box for wins and losses -->
+                <div id="score">
+
+                    <div id="wins"></div>
+
+                    <div id="losses"></div>
+
+                </div>
+        
+            </div>
+
+        </div>   
+            
+    </div>
+   
+    <nav class="instruction">
+
+        <div><h1 id="score"></h1></div>
+                    
+        <p>Type a letter to begin playing. 6 wrong guesses and you lose--Head, torso, 2 legs and 2 arms. No clothing nonsense or other details. Start to play. Reset to replay.</p>
+                        
+        <p>Guess the name of a hero from the MCU. No villains, power-less supporting characters or television only characters. Only Avengers and Guardians of the Galaxy members. For simplicities sake, don't worry about spaces or dashes.</p>
+                        
+        <p>No X-men or Fantastic Four characters. Fox still owns the movie rights to them currently.</p>
+                  
+    </nav>
+    
+</body>
+</html>
